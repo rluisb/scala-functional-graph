@@ -8,6 +8,8 @@ object Main extends App {
     .addEdge("Rome", "London")
     .addEdge("Paris", "Rome")
 
-  print(graph.neighbours(vertex = "London"))
+  Traversal.traversalDFS("London", graph, println)
+  println()
+  Traversal.traversalDFSAlt("London", graph, println)
 
 }
